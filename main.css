@@ -1,0 +1,248 @@
+body {
+	font-family: 'Lato', sans-serif;
+	margin: 0 auto;
+}
+
+#myHeader {
+	height: 100%;
+	
+}
+
+a {
+	text-decoration: none;
+}
+
+#img {
+	background-size: 100%;
+	margin: 0 auto;
+	padding: 0;
+	height: auto;
+	width: 100%;
+	background-position: center;
+}
+
+#img img {
+	width: 100%;
+}
+
+
+#myHeader h6 {
+	color: #fff;
+	font-size: 12px;
+	padding-left: 5px;
+}
+
+.arrow {
+  width: 0; 
+  height: 0; 
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  margin: 0 auto;
+  border-top: 25px solid #fff;
+  margin-top: 450px;
+
+}
+
+#main {
+	width: 100%;
+	background-color: #fff;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#main-nav {
+	margin: 0 auto;
+	display: table;
+	background-color: black;
+	width: 100%;
+	text-align: center;
+	padding: 10px 16px;
+	position: fixed;
+	top: 0px;
+	z-index: 10;
+}
+
+#main-nav ul {
+	text-align: center;
+	overflow: hidden;
+	display: inline-table;
+	margin-top: 15px;
+
+}
+
+#main-nav ul li {
+	float: left;
+	padding-right: 50px;
+	list-style: none;
+	display: inline;
+}
+
+#main-nav ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+.wrapper {
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0px;
+  grid-auto-rows: minmax(400px, auto);
+  padding: 0px;
+}
+.wrapper p {
+	text-align: center;
+	color: #fff;
+	top: 80%;
+	font-size: 24px;
+	-webkit-transition-property: all;
+  	-webkit-transition-property: transform;
+  	-webkit-transition-duration: 2s;
+}
+
+.wrapper a {
+	color: #fff;
+	padding: 15px;
+	text-decoration: none;
+	text-align: center;
+	border: 2px solid;
+    border-color: #fff;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.wrapper a:hover {
+	color: #ddd;
+	border-color: gainsboro;
+}
+
+.one {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.one img {
+	background-size: cover;
+	width: 100%;
+	height: inherit;
+	object-fit: cover;
+}
+
+.two { 
+  grid-column: 2;
+  grid-row: 1;
+  background-color: #333;
+}
+.three {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: #333;
+}
+.four {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.four img {
+	background-size: cover;
+	width: 100%;
+	height: inherit;
+	object-fit: cover;
+}
+
+.one, .two, .three, .four{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.one p, .two p, .three p, .four p{
+    padding: 15px 50px;
+    font-family: 'lato';
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.around h3, .around h4 {
+	font-family: 'lato';
+	text-align: center;
+	color: #fff;
+}
+
+.around h3 {
+	font-size: 42px;
+	padding-top: 50px;
+}
+
+.around h4 {
+	font-size: 18px;
+}
+
+#fermentering img {
+	width: 100%;
+	opacity: 1;
+}
+
+#fermentering {
+	position: relative;
+}
+
+
+.text-i-box {
+	z-index: 3;
+	position: absolute;
+	top: 50px;
+	padding: 50px 200px 80px 200px;
+	text-align: center;
+	left: 10%;
+    right: 10%;
+	background-color: rgba(1000,1000,1000,0.75);}
+
+.text-i-box h4 {
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+.text-i-box h2 {
+	font-size: 42px;
+}
+
+.text-i-box p#last {
+	margin-bottom: 50px;
+}
+
+.text-i-box a {
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 10px;
+	color: #fff;
+	padding: 15px;
+	text-decoration: none;
+}
+
+.text-i-box a:hover {
+	color: #eee;
+	background-color: #333;
+}
+
+footer {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	overflow: hidden;
+	background-color: #000;
+	height: 100px;	
+}
+
+footer ul {
+	list-style: none;
+	margin-top: 15px;
+}
+
+footer ul li {
+	display: inline;
+	padding-right: 50px;
+	color: #fff;
+}
+footer ul li a {
+	color: #fff;
+}
