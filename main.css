@@ -3,13 +3,13 @@ body {
 	margin: 0 auto;
 }
 
-#myHeader {
-	height: 100%;
-	
-}
-
 a {
 	text-decoration: none;
+}
+
+/* ---------- HEADER -----------*/
+#myHeader {
+	height: 100%;	
 }
 
 #img {
@@ -25,30 +25,13 @@ a {
 	width: 100%;
 }
 
-
 #myHeader h6 {
 	color: #fff;
 	font-size: 12px;
 	padding-left: 5px;
 }
 
-.arrow {
-  width: 0; 
-  height: 0; 
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  margin: 0 auto;
-  border-top: 25px solid #fff;
-  margin-top: 450px;
-
-}
-
-#main {
-	width: 100%;
-	background-color: #fff;
-	margin: 0 auto;
-	overflow: hidden;
-}
+/* ----------- NAV BAR ------------*/
 
 #main-nav {
 	margin: 0 auto;
@@ -81,6 +64,272 @@ a {
 	text-decoration: none;
 	color: white;
 }
+
+/* ----------- MAIN INDEX ------------*/
+
+
+#main {
+	width: 100%;
+	background-color: #fff;
+	margin: 0 auto;
+	overflow: hidden;
+	border: none;
+}
+
+#fermentering img {
+	width: 100%;
+	opacity: 1;
+}
+
+#fermentering {
+	position: relative;
+	border: none;
+}
+
+.text-i-box {
+	z-index: 3;
+	position: absolute;
+	top: 50px;
+	padding: 50px 200px 80px 200px;
+	text-align: center;
+	left: 10%;
+    right: 10%;
+	background-color: rgba(1000,1000,1000,0.75);}
+
+.text-i-box h4 {
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+.text-i-box h2 {
+	font-size: 42px;
+}
+
+.text-i-box p#last {
+	margin-bottom: 50px;
+}
+
+.text-i-box a {
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 10px;
+	color: #fff;
+	padding: 15px;
+	text-decoration: none;
+}
+
+.text-i-box a:hover {
+	color: #eee;
+	background-color: #333;
+}
+
+/* ----------- MAIN ABOUT ------------*/
+
+.text-i-box2 {
+	z-index: 3;
+	position: absolute;
+	top: 130px;
+	padding: 50px 200px 80px 200px;
+	text-align: center;
+	left: 10%;
+    right: 10%;
+	background-color: rgba(1000,1000,1000,0.75);
+	margin-bottom: 20px;
+}
+
+.text-i-box2 h2 {
+	font-size: 42px;
+	margin-bottom: 24px;
+}
+
+.text-i-box2 #source:hover {
+	color: #eee;
+	background-color: #333;
+}
+
+.text-i-box2 #source {
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 10px;
+	color: #fff;
+	padding: 10px 15px;
+	text-decoration: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+
+/* ----------- MAIN CONTACT ------------*/
+
+.text-i-box3 {
+	z-index: 3;
+	position: absolute;
+	top: 80px;
+	padding: 50px 200px 80px 200px;
+	text-align: center;
+	left: 10%;
+    right: 10%;
+	margin-bottom: 20px;
+}
+
+.text-i-box3 h2 {
+	font-size: 42px;
+	margin-bottom: 42px;
+	color: #eee;
+}
+
+#contact-form {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 50px;
+	background-color: rgba(1000,1000,1000,0.5);
+	border-radius: 20px;
+}
+
+.form label {
+	margin-bottom: 10px;
+	color: #555;
+}
+
+.form-control {
+	margin-bottom: 25px;
+	border-radius: 10px;
+	border: none;
+	color: #888;
+}
+
+.btn {
+	color: #fff;
+	padding: 10px 15px;
+	text-decoration: none;
+	text-align: center;
+	border: 2px solid;
+    border-color: #fff;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.btn:hover {
+	color: #eee;
+	background-color: rgba(0,0,0,0.2);
+}
+
+/* ----------- SLIDESHOW ------------*/
+
+#fermentering #image-gallery {
+	height: 100%;
+	width: 130%;
+	text-align: center;
+}
+.text-i-box4 {
+	position: absolute;
+	top: 10%;
+	padding: 25px;
+	text-align: center;
+	left: 10%;
+    right: 10%;
+	margin-bottom: 20px;
+	background: rgba(1000,1000,1000,0.5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 30px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 10px;
+  border-radius: 3px 0 0 3px;
+  color: white;
+}
+
+.prev {
+	left: 10px;
+	color: white;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.row {
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  margin: 0 auto;
+  width: 16.6%;
+  background-image: cover;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+  background-size: contain;
+  height: 100%;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+/* ----------- GRID ------------*/
 
 .wrapper {
   margin-top: 0px;
@@ -178,51 +427,8 @@ a {
 	font-size: 18px;
 }
 
-#fermentering img {
-	width: 100%;
-	opacity: 1;
-}
-
-#fermentering {
-	position: relative;
-}
 
 
-.text-i-box {
-	z-index: 3;
-	position: absolute;
-	top: 50px;
-	padding: 50px 200px 80px 200px;
-	text-align: center;
-	left: 10%;
-    right: 10%;
-	background-color: rgba(1000,1000,1000,0.75);}
-
-.text-i-box h4 {
-	margin-top: 20px;
-	margin-bottom: 15px;
-}
-
-.text-i-box h2 {
-	font-size: 42px;
-}
-
-.text-i-box p#last {
-	margin-bottom: 50px;
-}
-
-.text-i-box a {
-	background-color: rgba(0,0,0,0.5);
-	border-radius: 10px;
-	color: #fff;
-	padding: 15px;
-	text-decoration: none;
-}
-
-.text-i-box a:hover {
-	color: #eee;
-	background-color: #333;
-}
 
 footer {
 	width: 100%;
@@ -245,4 +451,23 @@ footer ul li {
 }
 footer ul li a {
 	color: #fff;
+}
+
+
+/*--------- MEDIA QUERY ------------*/
+
+@media screen and (max-width: 600px) {
+
+	/* ----------- MAIN INDEX ------------*/
+
+
+.wrapper {
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 0px;
+  grid-auto-rows: minmax(450px, auto);
+  padding: 0px;
+}
+
 }
