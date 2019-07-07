@@ -6,7 +6,7 @@ var button = document.getElementsByClassName('btn');
 
 
 function validationForm() {
-	alert("Ditt meddelande är kommer att skickas!");
+	alert("Ditt meddelande skickas!");
 };
 
 
