@@ -513,7 +513,7 @@ and (max-width : 699px) {
 .wrapper {
   margin-top: 0px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 2fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(375px, auto);
   padding: 0px;
