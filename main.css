@@ -3,14 +3,14 @@ body {
 	margin: 0 auto;
 }
 
-a {
-	text-decoration: none;
-}
-
 
 /* ---------- HEADER -----------*/
 #myHeader {
 	height: 100%;	
+}
+
+a {
+	text-decoration: none;
 }
 
 #img {
@@ -248,6 +248,8 @@ a {
 /* Hide the images by default */
 .mySlides {
   display: none;
+  width: 100%;
+  height: auto;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -455,19 +457,56 @@ footer ul li a {
 }
 
 
-/*--------- MEDIA QUERY ------------*/
+/*--------- MEDIA QUERY IPAD------------*/
 
-@media screen and (max-width: 600px) {
+@media only screen 
+and (max-device-width : 1024px)
+and (min-device-width : 768px)  {
 
 	/* ----------- MAIN INDEX ------------*/
-
 
 .wrapper {
   margin-top: 0px;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 2fr);
   grid-gap: 0px;
-  grid-auto-rows: minmax(450px, auto);
+  grid-auto-rows: minmax(350px, auto);
+  padding: 0px;
+}
+
+.text-i-box h4 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.text-i-box h2 {
+	font-size: 24px;
+}
+
+.text-i-box {
+	padding: 10px;
+}
+
+#fermentering {
+	display: none;
+}
+
+}
+
+
+/*--------- MEDIA QUERY IPHONE------------*/
+
+
+@media only screen 
+and (min-device-width : 375px)
+and (max-device-width : 767px) { 
+
+.wrapper {
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0px;
+  grid-auto-rows: minmax(375px, auto);
   padding: 0px;
 }
 

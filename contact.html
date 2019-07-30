@@ -31,7 +31,7 @@
         <img src="images/black.jpeg">
           <div class="text-i-box3">
             <h2>Kontakta oss</h2>
-            <form name="myForm" id="contact-form" onsubmit="validationForm()">
+            <form name="myForm" id="contact-form" onsubmit=" return validationForm()">
               <div class="form">
                 <label for="email-input">Email</label>
                 <input type="email" name="EMail" class="form-control" id="email-input" placeholder="Email">
@@ -44,7 +44,7 @@
                 <label for="text-input">Meddelande</label>
                 <textarea class="form-control" name="Text" rows="3">Skriv meddelande här</textarea>
               </div>
-              <button type="submit" class="btn">Skicka</button>
+              <input type="submit" value="Skicka" class="btn">
             </form>
           </div>  
       </div>

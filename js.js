@@ -2,12 +2,23 @@ $( document ).ready(function() {
     console.log( "Im loaded! Yaaaaaay!" );
 });
 
-var button = document.getElementsByClassName('btn');
-
+var submit = document.getElementsByClassName('btn');
 
 function validationForm() {
-	alert("Ditt meddelande skickas!");
+	 var x = document.forms["myForm"]["EMail"].value;
+  if (x == "") {
+    alert("Fyll i korrekt emailadress");
+    return false;
+  }
+  	 var y = document.forms["myForm"]["Name"].value;
+  if (y == "") {
+    alert("Fyll i ditt namn");
+    return false;
+  }
+	return alert("Ditt meddelande kommer skickas!");
 };
+
+
 
 
 /* SLIDESHOW */
