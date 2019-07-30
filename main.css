@@ -456,3 +456,91 @@ footer ul li a {
 }
 
 
+
+
+/*--------- MEDIA QUERY IPAD------------*/
+
+@media screen 
+and (max-width : 950px) {
+
+	/* ----------- MAIN INDEX ------------*/
+
+.wrapper {
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 0px;
+  grid-auto-rows: minmax(350px, auto);
+  padding: 0px;
+}
+
+.text-i-box h4 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+.text-i-box h2 {
+	font-size: 24px;
+}
+
+.text-i-box {
+	padding: 30px;
+	left: 5%;
+	right: 5%;
+	font-size: 15px;
+}
+
+.text-i-box a {
+	margin-bottom: 50px;
+}
+
+#fermentering {
+	display: none;
+}
+
+#fermentering2 {
+	display: block;
+}
+
+}
+
+
+/*--------- MEDIA QUERY IPHONE------------*/
+
+
+@media screen 
+and (max-width : 699px) { 
+
+.wrapper {
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(375px, auto);
+  padding: 0px;
+}
+
+
+.one {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.two { 
+  grid-column: 1;
+  grid-row: 1;
+  background-color: #333;
+}
+.three {
+  grid-column: 1;
+  grid-row: 3;
+  background-color: #333;
+}
+.four {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+}
+
