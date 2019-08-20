@@ -1,6 +1,7 @@
 body {
 	font-family: 'Lato', sans-serif;
 	margin: 0 auto;
+	padding: 0;
 }
 
 /* ---------- HEADER -----------*/
@@ -76,15 +77,23 @@ a {
 	border: none;
 }
 
-#fermentering img, #fermentering2 img {
+#fermentering img {
 	opacity: 1;
 	position: absolute;
 }
 
-#fermentering, #fermentering2 {
+#fermentering {
 	position: relative;
 	border: none;
+	overflow: hidden;
 }
+
+#fermentering2 {
+	border: none;
+	overflow: hidden;
+}
+
+
 
 .text-i-box {
 	z-index: 3;
@@ -96,6 +105,7 @@ a {
 	margin: 0 auto;
 	background-color: rgba(1000,1000,1000,0.75);
 	margin-bottom: 100px;
+	font-size: 1rem;
 }
 
 .text-i-box h4 {
@@ -129,13 +139,16 @@ a {
 .text-i-box2 {
 	z-index: 3;
 	position: absolute;
-	top: 130px;
-	padding: 50px 200px 80px 200px;
+	top: 100px;
+	padding: 5% 15%;
 	text-align: center;
-	left: 10%;
-    right: 10%;
+	width: 80%;
+	margin: 0 auto;
 	background-color: rgba(1000,1000,1000,0.75);
-	margin-bottom: 20px;
+	margin-bottom: 100px;
+	font-size: 1rem;
+	right: 5%;
+	left: 5%;
 }
 
 .text-i-box2 h2 {
@@ -165,12 +178,16 @@ a {
 .text-i-box3 {
 	z-index: 3;
 	position: absolute;
-	top: 80px;
-	padding: 50px 200px 80px 200px;
+	top: 100px;
+	padding: 5% 15%;
 	text-align: center;
-	left: 10%;
-    right: 10%;
-	margin-bottom: 20px;
+	width: 80%;
+	margin: 0 auto;
+	background-color: rgba(1000,1000,1000,0);
+	margin-bottom: 100px;
+	font-size: 1rem;
+	right: 5%;
+	left: 5%;
 }
 
 .text-i-box3 h2 {
@@ -219,6 +236,7 @@ a {
 
 /* ----------- SLIDESHOW ------------*/
 
+
 #fermentering #image-gallery, #fermentering2 #image-gallery {
 	height: 100%;
 	width: 130%;
@@ -226,7 +244,7 @@ a {
 }
 .text-i-box4 {
 	position: absolute;
-	top: 10%;
+	top: 15%;
 	padding: 25px;
 	text-align: center;
 	left: 10%;
@@ -407,6 +425,7 @@ a {
 	width: 100%;
 	height: 100%;
 	text-align: center;
+	margin-bottom: 10%;
 }
 
 .two p, .three p{
@@ -441,6 +460,8 @@ footer {
 	overflow: hidden;
 	background-color: #000;
 	height: 100px;	
+	bottom: 0px;
+	margin-bottom: 0;
 }
 
 footer ul {
@@ -463,17 +484,37 @@ footer ul li a {
 /*--------- MEDIA QUERY IPAD------------*/
 
 @media screen 
-and (max-width: 950px) {
+and (max-width: 770px) {
 
-	/* ----------- MAIN INDEX ------------*/
+
 
 .wrapper {
   margin-top: 0px;
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 0px;
-  grid-auto-rows: minmax(350px, auto);
+  grid-auto-rows: minmax(300px, auto);
   padding: 0px;
+}
+
+.wrapper a {
+	padding: 10px;
+	font-size: 15px;
+}
+
+.wrapper p {
+	font-size: 0.85rem;
+	padding: 0% 5%;
+}
+
+.around h3 {
+	font-size: 30px;
+	padding-top: 30px;
+}
+
+.around h4 {
+	font-size: 16px;
+	padding: 0% 5%;
 }
 
 .text-i-box h4 {
@@ -491,19 +532,16 @@ and (max-width: 950px) {
 	font-size: 15px;
 	margin: 0 auto;
 	margin-bottom: 10%;
+	font-size: 0.85rem;
 }
 
-.text-i-box a {
-	margin-bottom: 50px;
-}
-
-#fermentering {
+#contact-form {
+	width: 100%;
+	padding: 7%;
 
 }
 
-#fermentering2 {
-	display: block;
-}
+
 
 }
 
@@ -511,7 +549,7 @@ and (max-width: 950px) {
 /*--------- MEDIA QUERY IPHONE------------*/
 
 
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 480px) { 
 
 .wrapper {
   margin-top: 0px;
@@ -542,6 +580,29 @@ and (max-width: 950px) {
   grid-column: 1;
   grid-row: 4;
 }
+
+
+/* GALLERY */
+
+.text-i-box4 {
+	right: 0%;
+	left: 0%;
+	padding: 0%;
+	margin-top: 8%;
+	display: none;
+}
+
+#contact-form {
+	position: absolute;
+	left: 2%;
+	right: 2%;
+	width: 100%;
+}
+
+.text-i-box3 h2 {
+	font-size: 22px;
+}
+
 
 }
 
