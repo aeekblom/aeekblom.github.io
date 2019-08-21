@@ -2,6 +2,19 @@ $( document ).ready(function() {
     console.log( "Im loaded! Yaaaaaay!" );
 });
 
+/*------ SHOW AND HIDE MENU ---------*/
+
+
+$("#hamburger").click(function(){
+  $("#main-nav").show();
+});
+
+$("#delete").click(function(){
+  $("#main-nav").hide();
+});
+
+
+
 var submit = document.getElementsByClassName('btn');
 
 function validationForm() {
@@ -76,4 +89,7 @@ function showSlides() {
 if (window.matchMedia('screen and (max-width: 480px)').matches) {
     // it matches
     alert("The photo gallery won't play on mobile");
-} 
+}
+
+
+
