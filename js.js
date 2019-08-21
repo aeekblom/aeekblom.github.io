@@ -88,7 +88,7 @@ function showSlides() {
 
 if (window.matchMedia('screen and (max-width: 480px)').matches) {
     // it matches
-    alert("The photo gallery won't play on mobile");
+    alert("Foto-galleriet kan ej visas på mobilversion.");
 }
 
 
